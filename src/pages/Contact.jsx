@@ -38,7 +38,7 @@ export default function Contact() {
                 </span>
               </h2>
               <p className="text-base mb-10 max-w-lg mx-auto" style={{ color: "#6b7494", fontWeight: 300 }}>
-                I'm currently available for freelance projects — landing pages, web apps, AI-powered products. Let's talk.
+                I'm currently available for freelance projects — landing pages, web apps,AI-powered products. Let's talk.
               </p>
 
               <div className="flex gap-4 justify-center flex-wrap mb-10">

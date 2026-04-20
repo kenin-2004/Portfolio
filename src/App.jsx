@@ -34,7 +34,7 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen"
+      className="min-h-screen overflow-x-hidden w-screen"
       style={{
         background: "#07090e",
         fontFamily: "'Cabinet Grotesk', 'DM Sans', sans-serif",
@@ -42,6 +42,7 @@ export default function App() {
     >
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+        html, body { overflow-x: hidden; }
         * { cursor: none !important; }
         html { scroll-behavior: smooth; }
         ::-webkit-scrollbar { width: 4px; }

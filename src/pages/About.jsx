@@ -11,6 +11,7 @@ export default function About() {
     { id: "services", label: "Services" },
     { id: "process", label: "My process" },
   ];
+
   const content = {
     story: (
       <div className="space-y-4 text-sm leading-relaxed" style={{ color: "#cfcccc", fontWeight: 300 }}>
@@ -50,13 +51,13 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-28 relative z-10" style={{ background: "rgba(255,255,255,0.01)" }}>
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-16 md:py-28 relative z-10" style={{ background: "rgba(255,255,255,0.01)" }}>
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
 
           {/* Card */}
           <FadeIn>
-            <div className="rounded-2xl p-8" style={{ background: "#0f1219", border: "1px solid rgba(255,255,255,0.07)" }}>
+            <div className="rounded-2xl p-6 md:p-8" style={{ background: "#0f1219", border: "1px solid rgba(255,255,255,0.07)" }}>
               <div className="w-16 h-16 rounded-2xl flex items-center justify-center text-2xl font-black text-white mb-6"
                 style={{ background: "linear-gradient(135deg,#4f8fff,#7c3aed)", fontFamily: "'Syne',sans-serif" }}>
                 SK

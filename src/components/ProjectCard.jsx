@@ -27,15 +27,15 @@ export default function ProjectCard({ project, index }) {
         onMouseLeave={() => setHovered(false)}
       >
         {/* Info */}
-        <div className={`p-10 flex flex-col justify-center ${!isEven ? "md:order-2" : ""}`}>
-          <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full w-fit mb-5"
+        <div className={`p-6 md:p-10 flex flex-col justify-center overflow-hidden ${!isEven ? "md:order-2" : ""}`}>
+          <div className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1 rounded-full w-fit mb-5 flex-wrap"
             style={{ background: project.accentBg, color: project.accent, border: `1px solid ${project.accent}30` }}>
             {project.tag}
           </div>
-          <h3 className="text-3xl font-black tracking-tight mb-4" style={{ fontFamily: "'Syne',sans-serif", color: "#f0f2f8" }}>
+          <h3 className="text-2xl md:text-3xl font-black tracking-tight mb-4 break-words" style={{ fontFamily: "'Syne',sans-serif", color: "#f0f2f8" }}>
             {project.name}
           </h3>
-          <p className="text-sm leading-relaxed mb-6" style={{ color: "#6b7494", fontWeight: 300 }}>
+          <p className="text-sm md:text-base leading-relaxed mb-6 break-words" style={{ color: "#6b7494", fontWeight: 300 }}>
             {project.desc}
           </p>
           <div className="flex flex-wrap gap-2 mb-7">
@@ -57,14 +57,14 @@ export default function ProjectCard({ project, index }) {
         </div>
 
         {/* Preview */}
-        <div className={`relative flex items-center justify-center min-h-[280px] overflow-hidden ${!isEven ? "md:order-1" : ""}`}
+        <div className={`relative flex items-center justify-center min-h-[200px] md:min-h-[280px] overflow-hidden ${!isEven ? "md:order-1" : ""}`}
           style={{ background: "rgba(255,255,255,0.02)", borderLeft: isEven ? `1px solid rgba(255,255,255,0.06)` : "none", borderRight: !isEven ? `1px solid rgba(255,255,255,0.06)` : "none" }}>
 
           {/* Decorative glow */}
           <div className="absolute rounded-full pointer-events-none"
             style={{ width: 300, height: 300, background: `radial-gradient(circle, ${project.accent}10 0%, transparent 70%)`, top: "50%", left: "50%", transform: "translate(-50%,-50%)" }} />
 
-          <div className="w-[80%] max-w-[300px] rounded-xl overflow-hidden transition-transform duration-500"
+          <div className="w-[85%] md:w-[80%] max-w-[260px] md:max-w-[300px] rounded-xl overflow-hidden transition-transform duration-500"
             style={{
               background: "#0d1117",
               border: "1px solid rgba(255,255,255,0.1)",

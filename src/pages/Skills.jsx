@@ -17,14 +17,14 @@ const SKILLS = [
   { name: "Tailwind CSS", level: 94, color: "#38bdf8", icon: "🌊", desc: "Utility-first, responsive" },
   { name: "JavaScript", level: 96, color: "#f7df1e", icon: "JS", desc: "ES6+, async/await, DOM" },
   { name: "REST APIs", level: 85, color: "#4f8fff", icon: "🔗", desc: "Fetch, Axios, integration" },
-  { name: "AI APIs", level: 80, color: "#a78bfa", icon: "🤖", desc: "OpenAI / Claude APIs" },
+  { name: "AI APIs", level: 80, color: "#a78bfa", icon: "🤖", desc: "OpenAI / Gemini APIs" },
   { name: "Figma → Code", level: 88, color: "#f97316", icon: "🎨", desc: "Pixel-perfect conversion" },
 ];
 export default function Skills() {
   return (
-    <section id="skills" className="py-28 relative z-10">
-      <div className="max-w-6xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-20 items-center">
+    <section id="skills" className="py-16 md:py-28 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
           <FadeIn>
             <SectionTag>Skills</SectionTag>
             <h2 className="text-4xl lg:text-5xl font-black tracking-tight mb-6" style={{ fontFamily: "'Syne',sans-serif", color: "#f0f2f8" }}>

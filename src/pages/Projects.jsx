@@ -32,8 +32,8 @@ const PROJECTS = [
 ];
 export default function Projects() {
   return (
-    <section id="projects" className="py-28 relative z-10" style={{ background: "rgba(255,255,255,0.01)" }}>
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="projects" className="py-16 md:py-28 relative z-10" style={{ background: "rgba(255,255,255,0.01)" }}>
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         <FadeIn className="mb-16">
           <SectionTag>Projects</SectionTag>
           <h2 className="text-4xl lg:text-5xl font-black tracking-tight mb-4" style={{ fontFamily: "'Syne',sans-serif", color: "#f0f2f8" }}>

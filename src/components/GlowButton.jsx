@@ -1,5 +1,5 @@
 export default function GlowButton({ href, children, variant = "primary", onClick }) {
-  const base = "inline-flex items-center gap-2 px-7 py-3.5 rounded-xl font-medium text-sm transition-all duration-200 cursor-pointer";
+  const base = "inline-flex items-center gap-2 px-4 sm:px-7 py-2.5 sm:py-3.5 rounded-xl font-medium text-sm transition-all duration-200 cursor-pointer";
   const styles = {
     primary: { background: "#4f8fff", color: "#fff" },
     ghost: { background: "transparent", color: "#e2e8f0", border: "1px solid rgba(255,255,255,0.12)" },

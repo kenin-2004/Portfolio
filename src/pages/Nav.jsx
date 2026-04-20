@@ -23,7 +23,7 @@ export default function Nav({ active }) {
         backdropFilter: scrolled ? "blur(24px)" : "none",
         borderBottom: scrolled ? "1px solid rgba(255,255,255,0.06)" : "none",
       }}>
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <a href="#hero" className="font-bold text-2xl tracking-tight" style={{ fontFamily: "'Syne', sans-serif", color: "#f0f2f8" }}>
           kenin<span style={{ color: "#4f8fff" }}>.</span>
         </a>
@@ -61,7 +61,7 @@ export default function Nav({ active }) {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden px-6 pb-6 pt-2" style={{ background: "rgba(7,9,14,0.95)", backdropFilter: "blur(24px)" }}>
+        <div className="md:hidden px-4 md:px-6 pb-6 pt-2" style={{ background: "rgba(7,9,14,0.95)", backdropFilter: "blur(24px)" }}>
           {NAV_LINKS.map(l => (
             <button key={l} onClick={() => scrollTo(l)}
               className="block w-full text-left py-3 text-sm border-b"

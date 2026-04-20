@@ -14,10 +14,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-28 relative z-10">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="contact" className="py-16 md:py-28 relative z-10">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         <FadeIn>
-          <div className="rounded-3xl p-12 md:p-20 text-center relative overflow-hidden"
+          <div className="rounded-3xl p-6 md:p-12 lg:p-20 text-center relative overflow-hidden"
             style={{ background: "#0f1219", border: "1px solid rgba(255,255,255,0.07)" }}>
 
             {/* Top gradient line */}
@@ -30,18 +30,18 @@ export default function Contact() {
 
             <div className="relative z-10">
               <SectionTag>Contact</SectionTag>
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tight mb-5"
+              <h2 className="text-3xl md:text-4xl lg:text-6xl font-black tracking-tight mb-5"
                 style={{ fontFamily: "'Syne',sans-serif", color: "#f0f2f8" }}>
                 Let's build something<br />
                 <span style={{ background: "linear-gradient(135deg,#4f8fff,#a78bfa)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
                   great together.
                 </span>
               </h2>
-              <p className="text-base mb-10 max-w-lg mx-auto" style={{ color: "#6b7494", fontWeight: 300 }}>
-                I'm currently available for freelance projects — landing pages, web apps,AI-powered products. Let's talk.
+              <p className="text-sm md:text-base mb-10 max-w-lg mx-auto" style={{ color: "#6b7494", fontWeight: 300 }}>
+                I'm currently available for freelance projects — landing pages, web apps, AI-powered products. Let's talk.
               </p>
 
-              <div className="flex gap-4 justify-center flex-wrap mb-10">
+              <div className="flex gap-3 md:gap-4 justify-center flex-wrap mb-10">
                 <GlowButton href={`mailto:${email}`}>
                   Send an email
                 </GlowButton>
@@ -50,7 +50,7 @@ export default function Contact() {
                 </GlowButton>
               </div>
 
-              <div className="flex gap-8 justify-center">
+              <div className="flex gap-4 md:gap-8 justify-center flex-wrap">
                 {[
                   { label: "GitHub", href: "https://github.com/kenin-2004" },
                   { label: "LinkedIn", href: "https://www.linkedin.com/in/kenin-sakhiya/" },
@@ -58,7 +58,7 @@ export default function Contact() {
                   { label: "Fiverr", href: "https://fiverr.com" },
                 ].map(l => (
                   <a key={l.label} href={l.href} target="_blank" rel="noreferrer"
-                    className="text-sm transition-colors duration-200"
+                    className="text-xs md:text-sm transition-colors duration-200"
                     style={{ color: "#4b5563" }}
                     onMouseEnter={e => e.currentTarget.style.color = "#f0f2f8"}
                     onMouseLeave={e => e.currentTarget.style.color = "#4b5563"}>
